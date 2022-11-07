@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tylt</title>
+
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: black;
+        font-family: 'Merriweather', sans-serif;
+        background-size: 100%;
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+        padding: 15px;
+        border-bottom: 4px groove #c34343;
+    }
+    h2 {
+        font-family: 'Lobster', sans-serif;
+        text-align: center;
+        color: #FFE66D;
+        font-size: 64px;
+    }
+    nav {
+        font-family: 'Merriweather', sans-serif;
+        color: #F7FFF7;
+        top: 0;
+        font-size: 20px;
+        padding-right: 5%
+    }
+
+    ul{
+      list-style-type: none;
+      padding-left: 5%;
+    }
+    ul li {
+        display: inline-block;
+        padding-right: 2%;
+        margin-top: 5px;
+    }
+    li a:hover {
+        background-color: silver;
+    }
+
+    body
+    {
+        background-color: black;
+    }
+    .content {
+
+    text-align: center;
+    padding-top: 1%;
+
+    }
+
+    label{
+    color:  #c34343;
+    font-size: 25px;
+    }
+
+    input{
+    border: 4px groove #c34343;
+    border-radius: 4px;
+    font-size: 15px;
+    }
+
+    .submitButton{
+      background: #c34343;
+        border-radius: 999px;
+        box-shadow: #c34343 0 10px 20px -10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 20px;
+        line-height: 34px;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 8px 18px;
+        width: fit-content;
+        border: 0;
+    }
+    .Body_One {
+    background-color: black;
+    color: white;
+    border-right:3px black groove;
+    margin-top: 5%;
+    border-left: 3px black groove;
+    border-top:3px black groove;
+    border-bottom:3px black groove;
+      text-align: center;
+      margin-left:10%;
+      margin-right:10%;
+      padding: 2%;
+      display: block;
+}
+
+p {
+  font-family: 'Merriweather', sans-serif;
+  color: #F7FFF7;
+}
+b {
+  font-family: 'Merriweather', sans-serif;
+  font-weight: bold;
+  color: #F7FFF7;
+}
+
+.button1{
+  background: #c34343;
+    border-radius: 999px;
+    box-shadow: #c34343 0 10px 20px -10px;
+    font-family: 'Merriweather', sans-serif;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 34px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    width: fit-content;
+    border: 0;
+}
+
+footer {
+  font-family: 'Merriweather', sans-serif;
+  text-align: center;
+  color: #F7FFF7;
+  font-size: 16px;
+  padding-top: 10%
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+</style>
+
+<body>
+    <header>
+        <div class="Top">
+            <h2 style="font-size: 45px;color:white; text-align: center; ">
+                <a href="/">Tylt</a>
+            </h2>
+        </div>
+    </header>   
+
+<div class="Body_One">
+    <p> <b> Sign me up to Reserve </b> </p>
+    <br>
+    <p> Thank you for choosing Tylt as your line manager. You can book your place in line by filling this form </p>
+    <br>
+    <p> Once you have signed up, we will give you your place in line on a ticket and text you on your 
+        given phone number when you can enter.
+    </p>
+</div>
+    <div class="content">
+        <form name = 'registration' method ="POST"  action="/registration" >
+            <label for="Name">Name:</label><br>
+            <input type="text" id="Name" name="Name" value="" required><br>
+        <br>
+            <label for="Email">Email:</label><br>
+            <input type="text" id="Email" name="Email" value="" required><br>
+        <br>
+            <label for="Phone_number">Phone Number:</label><br>
+            <input type="tel" id="Phone_number" name="Phone_number" value="" required><br>
+        <br>
+            <label for="Venue">Venue:</label><br>
+            <input type="text" id="Venue" name="Venue" value="" required><br>
+        <br>
+        <p>Note: Please select the time you want to enter. It is a $25 cover charge
+            before 11:30pm and $30 after
+        </p>
+        <label for="Time">Time you plan to show up</label><br>
+            <select id="Time" name="Time"  required>
+                <option value="0">Select a Time </option>
+                <option value="2200">10pm</option>
+                <option value="2215">10:15pm</option>
+                <option value="2230">10:30pm</option>
+                <option value="2245">10:45pm</option>
+                <option value="2300">11:00pm</option>
+                <option value="2315">11:15pm</option>
+                <option value="2330">11:30pm</option>
+                <option value="2345">11:45pm</option>
+                <option value="0000">12:00am</option>
+                <option value="0015">12:15am</option>
+                <option value="0030">12:30am</option>
+            </select>
+        <br>
+            
+        <input type = "submit" class="button1"/>
+        <br>
+        </form>
+    </div>
+
+    <footer>
+      Tylt
+      <br>
+      tyltboston@gmail.com
+      <br>
+    </footer>
+
+  <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
