@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tylt</title>
-
+    <link rel="icon" type="image/x-icon" href="T.jpg">
 </head>
 
 <style>
@@ -158,39 +158,41 @@ a:hover {
                 <a href="/">Tylt</a>
             </h2>
         </div>
-    </header>   
+    </header>
 
 <div class="Body_One">
-    <p> <b> Sign me up to Reserve </b> </p>
+    <p> <b> Reserve My Place in Line </b> </p>
     <br>
-    <p> Thank you for choosing Tylt as your line manager. You can book your place in line by filling this form </p>
+    <p> After reserving, you will recieve text message updates for when to arrive at the venue.
     <br>
-    <p> Once you have signed up, we will give you your place in line on a ticket and text you on your 
-        given phone number when you can enter.
+    </p>
+    <p> Upon arrival, our Tylt team member will guide you inside.
     </p>
 </div>
     <div class="content">
         <form name = 'registration' method ="POST"  action="/registration" >
-            <label for="Name">Name:</label><br>
+            <label for="Name">Full Name:</label><br>
             <input type="text" id="Name" name="Name" value="" required><br>
         <br>
             <label for="Email">Email:</label><br>
-            <input type="text" id="Email" name="Email" value="" required><br>
+            <input type="email" id="Email" name="Email" value="" required><br>
         <br>
             <label for="Phone_number">Phone Number:</label><br>
             <input type="tel" id="Phone_number" name="Phone_number" value="" required><br>
         <br>
             <label for="Venue">Venue:</label><br>
-            <input type="text" id="Venue" name="Venue" value="" required><br>
+            <select id="Venue" name="Venue"  required>
+                <option value="0">Select a Venue </option>
+                <option value="2200">Icon Nightclub</option>
+            </select>
         <br>
-        <p>Note: Please select the time you want to enter. It is a $25 cover charge
-            before 11:30pm and $30 after
+        <br>
+        <p>Please select the time you prefer to enter. There is a cover charge of $25 before 11:30pm, and $30 after.
         </p>
-        <label for="Time">Time you plan to show up</label><br>
+        <br>
+        <label for="Time">Arrival Time</label><br>
             <select id="Time" name="Time"  required>
                 <option value="0">Select a Time </option>
-                <option value="2200">10pm</option>
-                <option value="2215">10:15pm</option>
                 <option value="2230">10:30pm</option>
                 <option value="2245">10:45pm</option>
                 <option value="2300">11:00pm</option>
@@ -202,7 +204,8 @@ a:hover {
                 <option value="0030">12:30am</option>
             </select>
         <br>
-            
+        <br>
+
         <input type = "submit" class="button1"/>
         <br>
         </form>
@@ -211,8 +214,9 @@ a:hover {
     <footer>
       Tylt
       <br>
-      tyltboston@gmail.com
+      Instagram: @TyltBoston
       <br>
+      Email: TyltBoston@gmail.com
     </footer>
 
   <!-- Optional JavaScript -->
