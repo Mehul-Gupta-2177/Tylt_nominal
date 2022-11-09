@@ -178,12 +178,11 @@ a:hover {
             <input type="email" id="Email" name="Email" value="" required><br>
         <br>
             <label for="Phone_number">Phone Number:</label><br>
-            <input type="tel" id="Phone_number" name="Phone_number" value="" required><br>
+            <input type="text" id="Phone_number" name="Phone_number" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" value="" required><br>
         <br>
             <label for="Venue">Venue:</label><br>
             <select id="Venue" name="Venue"  required>
-                <option value="0">Select a Venue </option>
-                <option value="2200">Icon Nightclub</option>
+                <option value="Icon Nightclub">Icon Nightclub</option>
             </select>
         <br>
         <br>
@@ -191,8 +190,8 @@ a:hover {
         </p>
         <br>
         <label for="Time">Arrival Time</label><br>
-            <select id="Time" name="Time"  required>
-                <option value="0">Select a Time </option>
+            <select id="Time" name="Time" required>
+                <option style="display:none">Select a Time </option>
                 <option value="2230">10:30pm</option>
                 <option value="2245">10:45pm</option>
                 <option value="2300">11:00pm</option>
@@ -202,6 +201,15 @@ a:hover {
                 <option value="0000">12:00am</option>
                 <option value="0015">12:15am</option>
                 <option value="0030">12:30am</option>
+            </select>
+        <br>
+        <br>
+        <label for="Time">How did you hear about Tylt?</label><br>
+            <select id="Discovery" name="Discovery" required>
+                <option style="display:none">Select an Option</option>
+                <option value="Tylt Team Member">Tylt Team Member</option>
+                <option value="Friend">Friend</option>
+                <option value="Instagram">Instagram</option>
             </select>
         <br>
         <br>
