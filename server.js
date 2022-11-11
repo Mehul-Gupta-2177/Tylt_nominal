@@ -27,10 +27,10 @@ http.createServer(function (req, res) {
             form.parse(req, async function (err, fields, files) {
                 if (err) {console.log(err);}
                 console.log(fields["Name"].toString());
-                await fetch("https://api.apispreadsheets.com/data/8pUDKbvGjTgzcH1m/", {
+                await fetch("https://api.apispreadsheets.com/data/UE2ctyuGmhdA40g9/", {
 	            method: "POST",
 	            body: JSON.stringify({"data": {"0":fields["Name"],"1":fields["Email"],"2":fields["Phone_number"],
-                "3":fields["Venue"],"4":fields["Time"],"5":fields["Discovery"]}}),
+                "3":fields["Venue"],"4":fields["Time"],"5":fields["Discovery"], "6":fields["Date_Time_added"]}}),
                 }).then(res =>{
 	            if (res.status === 201){
 		            // SUCCESS
