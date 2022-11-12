@@ -57,10 +57,10 @@ http.createServer(function (req, res) {
     }
 
     else {
-        // error page
-        let error = "error.html";
-        fs.readFile(error, function (err, txt) {
-            res.writeHead(404, {'Content-Type': 'text/html'});
+        // On instagram update problem page
+        let index = "registration.html";
+        fs.readFile(index, function (err, txt) {
+            res.writeHead(200, {'Content-Type': 'text/html'});
             res.write(txt);
             res.end();
         });
