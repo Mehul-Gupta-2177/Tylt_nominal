@@ -163,12 +163,10 @@ a:hover {
 <div class="Body_One">
     <p> <b> Reserve My Place in the Tylt VIP Line</b></p>
     <br>
-    <p>Saturday, November 12</p>
+    <p>Friday, Nov 18 - Saturday, Nov 19</p>
     <br>
-    <p> After reserving, you will recieve text message updates for when to arrive at the venue.
+    <p> After reserving, you will recieve text message updates from the Tylt team.
     <br>
-    </p>
-    <p>Upon arrival, our Tylt team member will guide you inside.
     </p>
 </div>
     <div class="content">
@@ -182,13 +180,18 @@ a:hover {
             <label for="Phone_number">Phone Number:</label><br>
             <input type="text" id="Phone_number" name="Phone_number" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$" value="" required><br>
         <br>
+        <p>Select Hava for Friday night, Icon for Saturday night.</p>
+        <br>
+        </p>
             <label for="Venue">Venue:</label><br>
-            <select id="Venue" name="Venue"  required>
+            <select id="Venue" name="Venue" required>
+                <option style="display:none">Select a Venue </option>
+                <option value="Icon Nightclub">Hava Nightclub</option>
                 <option value="Icon Nightclub">Icon Nightclub</option>
             </select>
         <br>
         <br>
-        <p>Please select the time you prefer to enter. There is a cover charge of $25 before 11:30pm, and $30 after.
+        <p>Please select the time you prefer to enter. There is a cover charge of $25 if you enter before 11:30pm, and $30 after.
         </p>
         <br>
         <label for="Time">Arrival Time</label><br>
@@ -198,11 +201,6 @@ a:hover {
                 <option value="2245">10:45pm</option>
                 <option value="2300">11:00pm</option>
                 <option value="2315">11:15pm</option>
-                <option value="2330">11:30pm</option>
-                <option value="2345">11:45pm</option>
-                <option value="0000">12:00am</option>
-                <option value="0015">12:15am</option>
-                <option value="0030">12:30am</option>
             </select>
         <br>
         <br>
